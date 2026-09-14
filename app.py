@@ -4,7 +4,12 @@ from datetime import datetime
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parent
-DB = BASE / 'reviews.db'
+import os
+
+if os.environ.get("VERCEL"):
+    DB = Path("/tmp/reviews.db")
+else:
+    DB = BASE / "reviews.db"
 app = Flask(__name__, static_folder='assets', static_url_path='/assets')
 
 
