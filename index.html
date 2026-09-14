@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="REKA Embroidery & Tailoring — premium blouse stitching, embroidery, Aari work, saree pre-pleating and custom tailoring." />
+  <title>REKA — Embroidery & Tailoring</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="/style.css" />
+
+  <!-- Hero image styling -->
+  <style>
+    /* Remove the old sewing-machine visual styling */
+    .hero-art {
+      position: relative;
+      width: 100%;
+      min-height: 560px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent !important;
+    }
+
+    /* New hero image container */
+    .hero-photo {
+      position: relative;
+      width: 100%;
+      max-width: 620px;
+      height: 560px;
+      overflow: hidden;
+      border-radius: 42px;
+      background: #f8e8ed;
+      box-shadow: 0 25px 60px rgba(120, 20, 60, 0.16);
+      animation: heroImageIn 0.9s ease forwards;
+    }
+
+    .hero-photo::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 42px;
+      pointer-events: none;
+      box-shadow: inset 0 0 0 1px rgba(184, 29, 89, 0.10);
+    }
+
+    .hero-photo img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.8s ease;
+    }
+
+    .hero-photo:hover img {
+      transform: scale(1.05);
+    }
+
+    /* Small premium label */
+    .hero-photo-badge {
+      position: absolute;
+      left: 24px;
+      bottom: 24px;
+      z-index: 3;
+
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      padding: 13px 20px;
+      border-radius: 50px;
+
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+
+      box-shadow: 0 12px 30px rgba(70, 20, 40, 0.14);
+
+      color: #302329;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .hero-photo-badge span {
+      width: 34px;
+      height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 50%;
+      background: #f7dbe5;
+      color: #c2185b;
+      font-size: 16px;
+    }
+
+    /* Smooth entrance animation */
+    @keyframes heroImageIn {
+      from {
+        opacity: 0;
+        transform: translateX(45px) scale(0.97);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      .hero-art {
+        min-height: auto;
+        margin-top: 35px;
+      }
+
+      .hero-photo {
+        width: 100%;
+        height: 430px;
+        border-radius: 28px;
+      }
+
+      .hero-photo::after {
+        border-radius: 28px;
+      }
+
+      .hero-photo-badge {
+        left: 16px;
+        bottom: 16px;
+        padding: 10px 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="cursor-glow"></div>
+
+  <!-- HEADER -->
+  <header class="site-header" id="top">
+    <nav class="nav container">
+
+      <a class="brand" href="#home" aria-label="REKA home">
+        <div class="brand-mark">
+            <img src="assets\reka-logo.png" alt="REKA Logo">
+        </div>
+
+        <span>
+          <strong>REKA</strong>
+          <small>EMBROIDERY & TAILORING</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#story">Our Story</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#booking">Book a Stitch</a>
+      </div>
+
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- =====================================================
+         HERO SECTION
+         ===================================================== -->
+
+    <section class="hero" id="home">
+
+      <div class="hero-thread thread-one"></div>
+      <div class="hero-thread thread-two"></div>
+      <div class="hero-dots"></div>
+
+      <div class="container hero-grid">
+
+        <!-- LEFT SIDE - TEXT -->
+        <div class="hero-copy reveal">
+
+          <p class="eyebrow">
+            <span></span>
+            Crafted with care • Designed for you
+          </p>
+
+          <h1>
+            Stitching your <em>style.</em><br>
+            Embroidering your <em>dreams.</em>
+          </h1>
+
+          <p class="hero-text">
+            From elegant blouse stitching to detailed Aari work, we turn your ideas,
+            measurements and favourite fabrics into pieces that feel uniquely yours.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#booking" class="btn btn-primary">
+              Book an Appointment <span>↗</span>
+            </a>
+
+            <a href="#services" class="btn btn-ghost">
+              Explore Services
+            </a>
+          </div>
+
+          <div class="hero-trust">
+
+            <div>
+              <strong>Custom</strong>
+              <span>Measurements</span>
+            </div>
+
+            <i></i>
+
+            <div>
+              <strong>Fine</strong>
+              <span>Embroidery</span>
+            </div>
+
+            <i></i>
+
+            <div>
+              <strong>On-time</strong>
+              <span>Delivery</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- =================================================
+             RIGHT SIDE - NEW IMAGE
+             OLD SEWING MACHINE REMOVED
+             ================================================= -->
+
+        <div class="hero-art reveal delay-2">
+
+          <div class="hero-photo">
+
+            <img
+              src="assets\images\main.jpeg"
+              alt="REKA custom blouse stitching work"
+              loading="eager"
+            >
+
+            <div class="hero-photo-badge">
+              <span>✿</span>
+              <div>Custom Blouse Stitching</div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SERVICE STRIP -->
+    <section class="service-strip">
+
+      <div class="marquee">
+
+        <span>Blouse Stitching</span>
+        <b>✦</b>
+
+        <span>Embroidery</span>
+        <b>✦</b>
+
+        <span>Aari Work</span>
+        <b>✦</b>
+
+        <span>Saree Pre-Pleating</span>
+        <b>✦</b>
+
+        <span>Tassels & Finishing</span>
+        <b>✦</b>
+
+        <span>Custom Tailoring</span>
+        <b>✦</b>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SERVICES
+         ===================================================== -->
+
+    <section class="section services-section" id="services">
+
+      <div class="container">
+
+        <div class="section-head reveal">
+
+          <div>
+
+            <p class="eyebrow">
+              <span></span>
+              What we create
+            </p>
+
+            <h2>
+              Services made for <em>your wardrobe.</em>
+            </h2>
+
+          </div>
+
+          <p>
+            Thoughtful tailoring, clean finishing and beautiful details —
+            from the first measurement to the final stitch.
+          </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+          <article class="service-card featured reveal">
+
+            <div class="service-number">01</div>
+            <div class="service-icon">✂</div>
+
+            <h3>Blouse Stitching</h3>
+
+            <p>
+              Custom-fit blouses designed around your comfort,
+              neckline, sleeve style and occasion.
+            </p>
+
+            <a href="#booking">
+              Book service <span>→</span>
+            </a>
+
+          </article>
+
+
+          <article class="service-card reveal delay-1">
+
+            <div class="service-number">02</div>
+            <div class="service-icon">✧</div>
+
+            <h3>Embroidery</h3>
+
+            <p>
+              Elegant embroidery patterns that add character
+              without taking away from the fabric.
+            </p>
+
+            <a href="#booking">
+              Book service <span>→</span>
+            </a>
+
+          </article>
+
+
+          <article class="service-card reveal delay-2">
+
+            <div class="service-number">03</div>
+            <div class="service-icon">❀</div>
+
+            <h3>Aari Work</h3>
+
+            <p>
+              Intricate handwork, stones, beads and thread details
+              for festive and bridal designs.
+            </p>
+
+            <a href="#booking">
+              Book service <span>→</span>
+            </a>
+
+          </article>
+
+
+          <article class="service-card reveal">
+
+            <div class="service-number">04</div>
+            <div class="service-icon">◌</div>
+
+            <h3>Saree Pre-Pleating</h3>
+
+            <p>
+              Neat, event-ready pleats that make draping faster,
+              cleaner and more comfortable.
+            </p>
+
+            <a href="#booking">
+              Book service <span>→</span>
+            </a>
+
+          </article>
+
+
+          <article class="service-card reveal delay-1">
+
+            <div class="service-number">05</div>
+            <div class="service-icon">✦</div>
+
+            <h3>Tassels & Finishing</h3>
+
+            <p>
+              Custom tassels, finishing touches and coordinated
+              details to complete your look.
+            </p>
+
+            <a href="#booking">
+              Book service <span>→</span>
+            </a>
+
+          </article>
+
+
+          <article class="service-card dark reveal delay-2">
+
+            <div class="service-number">06</div>
+            <div class="service-icon">R</div>
+
+            <h3>Custom Tailoring</h3>
+
+            <p>
+              Have an idea? Bring your reference, fabric or sketch —
+              we'll help turn it into a wearable design.
+            </p>
+
+            <a href="#booking">
+              Start your design <span>→</span>
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         OUR STORY
+         ===================================================== -->
+
+    <section class="section story-section" id="story">
+
+      <div class="container story-grid">
+
+        <div class="story-visual reveal">
+
+          <div class="photo-frame frame-main">
+
+            <img
+              src="assets/images/design1.png"
+              alt="Tailor sewing fabric on a sewing machine"
+              loading="lazy"
+            >
+
+          </div>
+
+
+          <div class="photo-frame frame-small">
+
+            <img
+              src="assets/images/Saree.jpeg"
+              alt="Tailor working with an industrial sewing machine"
+              loading="lazy"
+            >
+
+          </div>
+
+
+          <div class="story-stamp">
+            Made
+            <br><br>
+            with
+            <br>
+            love ♡
+          </div>
+
+        </div>
+
+
+        <div class="story-copy reveal delay-1">
+
+          <p class="eyebrow">
+            <span></span>
+            The REKA promise
+          </p>
+
+          <h2>
+            Every stitch should feel <em>personal.</em>
+          </h2>
+
+          <p>
+            We believe tailoring is more than making clothes fit.
+            It's about understanding the person wearing them —
+            their style, occasion, comfort and little details that matter.
+          </p>
+
+          <p>
+            Our work brings together traditional handcraft and modern
+            finishing, so every piece looks beautiful and feels made
+            just for you.
+          </p>
+
+
+          <div class="promise-list">
+
+            <div>
+              <span>01</span>
+              <strong>Personal fitting</strong>
+              <small>Measurements that respect your comfort.</small>
+            </div>
+
+            <div>
+              <span>02</span>
+              <strong>Detail-first work</strong>
+              <small>Clean stitches and careful finishing.</small>
+            </div>
+
+            <div>
+              <span>03</span>
+              <strong>Honest service</strong>
+              <small>Clear communication from start to delivery.</small>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PROCESS
+         ===================================================== -->
+
+    <section class="section process-section">
+
+      <div class="container">
+
+        <div class="section-head centered reveal">
+
+          <div>
+
+            <p class="eyebrow">
+              <span></span>
+              Simple process
+            </p>
+
+            <h2>
+              From idea to <em>perfect fit.</em>
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <div class="process-grid">
+
+          <div class="process-step reveal">
+            <span>01</span>
+            <h3>Share your idea</h3>
+            <p>
+              Tell us the occasion, style and finish you have in mind.
+            </p>
+          </div>
+
+          <div class="process-line"></div>
+
+          <div class="process-step reveal delay-1">
+            <span>02</span>
+            <h3>Measure & design</h3>
+            <p>
+              We take measurements and finalise the design details together.
+            </p>
+          </div>
+
+          <div class="process-line"></div>
+
+          <div class="process-step reveal delay-2">
+            <span>03</span>
+            <h3>Stitch & craft</h3>
+            <p>
+              Your garment is stitched, embroidered and finished with care.
+            </p>
+          </div>
+
+          <div class="process-line"></div>
+
+          <div class="process-step reveal delay-3">
+            <span>04</span>
+            <h3>Try & deliver</h3>
+            <p>
+              Final fitting, adjustments and a beautiful ready-to-wear finish.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         GALLERY
+         ===================================================== -->
+
+    <section class="section gallery-section" id="gallery">
+
+      <div class="container">
+
+        <div class="section-head reveal">
+
+          <div>
+
+            <p class="eyebrow">
+              <span></span>
+              Inspiration
+            </p>
+
+            <h2>
+              A little look at our <em>style.</em>
+            </h2>
+
+          </div>
+
+          <p>
+            Use the reference gallery for ideas, then customise the neckline,
+            sleeves, embroidery and finishing to your taste.
+          </p>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+          <figure class="gallery-card tall reveal">
+
+            <img
+              src="assets\images\2design_page-0001.jpg"
+              alt="Tailor sewing fabric on a sewing machine"
+              loading="lazy"
+            >
+
+            <figcaption>
+              <span>Festive</span>
+              <strong>Embroidery & Aari</strong>
+            </figcaption>
+
+          </figure>
+
+
+          <figure class="gallery-card wide reveal delay-1">
+
+            <img
+              src="assets\images\all designs.jpg"
+              alt="Tailoring and blouse design collection"
+              loading="lazy"
+            >
+
+            <figcaption>
+              <span>Signature</span>
+              <strong>Stitching your style</strong>
+            </figcaption>
+
+          </figure>
+
+
+          <figure class="gallery-card tall reveal delay-2">
+
+            <img
+              src="https://images.pexels.com/photos/6461151/pexels-photo-6461151.jpeg?cs=srgb&dl=pexels-pavel-danilyuk-6461151.jpg&fm=jpg"
+              alt="Hand embroidery on fabric"
+              loading="lazy"
+            >
+
+            <figcaption>
+              <span>Classic</span>
+              <strong>Made with care</strong>
+            </figcaption>
+
+          </figure>
+
+          <figure class="gallery-card tall reveal delay-2">
+
+            <img
+              src="assets\images\image.png"
+              alt="Hand embroidery on fabric"
+              loading="lazy"
+            >
+          </figure>
+          <figure class="gallery-card tall reveal delay-2">
+
+            <img
+              src="assets\images\design6.jpeg"
+              alt="Hand embroidery on fabric"
+              loading="lazy"
+            >
+          </figure>
+
+          <figure class="gallery-card tall reveal delay-2">
+
+            <img
+              src="assets\images\design3.jpeg"
+              alt="Hand embroidery on fabric"
+              loading="lazy"
+            >
+          </figure>
+
+          <figure class="gallery-card tall reveal delay-2">
+
+            <img
+              src="assets\images\design4.jpeg"
+              alt="Hand embroidery on fabric"
+              loading="lazy"
+            >
+          </figure>
+
+          <figure class="gallery-card tall reveal delay-2">
+
+            <img
+              src="assets\images\design5.jpeg"
+              alt="Hand embroidery on fabric"
+              loading="lazy"
+            >
+          </figure>
+
+          <figure class="gallery-card tall reveal delay-2">
+
+            <img
+              src="assets\images\design.jpeg"
+              alt="Hand embroidery on fabric"
+              loading="lazy"
+            >
+          </figure>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CUSTOMER REVIEWS
+         ===================================================== -->
+
+    <section class="section review-section" id="reviews">
+
+      <div class="container">
+
+        <div class="reviews-heading reveal">
+
+          <p class="eyebrow">
+            <span></span>
+            CUSTOMER REVIEWS
+          </p>
+
+          <h2>
+            What our <em>customers say.</em>
+          </h2>
+
+          <p class="reviews-subtitle">
+            Real experiences from customers who trusted REKA
+            with their stitching, embroidery and tailoring.
+          </p>
+
+        </div>
+
+
+        <div class="review-hero reveal">
+
+          <div class="review-hero-copy">
+
+            <span class="review-kicker">
+              YOUR EXPERIENCE MATTERS
+            </span>
+
+            <h3>
+              Had your outfit stitched by REKA?
+            </h3>
+
+            <p>
+              Tell us how your experience was. Your review helps future
+              customers understand the quality, finishing and service
+              they can expect.
+            </p>
+
+            <button
+              type="button"
+              class="review-button"
+              onclick="openReviewForm()"
+            >
+              Write a Review <span>↗</span>
+            </button>
+
+            <small>
+              Your review will be checked by the REKA team
+              before it appears publicly.
+            </small>
+
+          </div>
+
+
+          <div class="review-hero-image">
+
+            <img
+              src="https://images.pexels.com/photos/6461151/pexels-photo-6461151.jpeg?cs=srgb&dl=pexels-pavel-danilyuk-6461151.jpg&fm=jpg"
+              alt="Tailor sewing fabric on a sewing machine"
+              loading="lazy"
+            >
+
+            <div class="review-image-badge">
+              <strong>5★</strong>
+              <span>Customer care</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="review-empty reveal" id="reviewEmpty">
+
+          <div class="review-empty-icon">★</div>
+
+          <h3>
+            No approved reviews yet
+          </h3>
+
+          <p>
+            Be the first customer to share your experience
+            with REKA Embroidery &amp; Tailoring.
+          </p>
+
+          
+
+        </div>
+
+
+        <div
+          class="review-form-wrap"
+          id="reviewForm"
+          hidden
+        >
+
+          <form
+            class="customer-review-form"
+            id="customerReviewForm"
+          >
+
+            <div class="form-header">
+
+              <p class="eyebrow">
+                <span></span>
+                SHARE YOUR EXPERIENCE
+              </p>
+
+              <h3>
+                Write a Review
+              </h3>
+
+              <p>
+                Tell us about the service you received from REKA.
+              </p>
+
+            </div>
+
+
+            <div class="review-form-grid">
+
+              <label>
+                Your Name
+
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  maxlength="80"
+                  placeholder="Enter your name"
+                >
+              </label>
+
+
+              <label>
+                Service / Work Type
+
+                <input
+                  type="text"
+                  name="service"
+                  required
+                  maxlength="100"
+                  placeholder="e.g. Blouse Stitching"
+                >
+              </label>
+
+            </div>
+
+
+            <label>
+
+              Rating
+
+              <select name="rating" required>
+
+                <option value="">
+                  Select rating
+                </option>
+
+                <option value="5">
+                  ★★★★★ — Excellent
+                </option>
+
+                <option value="4">
+                  ★★★★☆ — Very Good
+                </option>
+
+                <option value="3">
+                  ★★★☆☆ — Good
+                </option>
+
+                <option value="2">
+                  ★★☆☆☆ — Average
+                </option>
+
+                <option value="1">
+                  ★☆☆☆☆ — Poor
+                </option>
+
+              </select>
+
+            </label>
+
+
+            <label>
+
+              Your Review
+
+              <textarea
+                name="review"
+                required
+                maxlength="1000"
+                rows="5"
+                placeholder="Tell us about your stitching, embroidery, fitting or service experience..."
+              ></textarea>
+
+            </label>
+
+
+            <div class="review-form-actions">
+
+              <button
+                type="submit"
+                class="review-button"
+              >
+                Submit Review <span>↗</span>
+              </button>
+
+              <button
+                type="button"
+                class="review-cancel"
+                onclick="closeReviewForm()"
+              >
+                Cancel
+              </button>
+
+            </div>
+
+
+            <p
+              class="review-form-message"
+              id="reviewFormMessage"
+            ></p>
+
+          </form>
+
+        </div>
+
+
+        <div
+          class="approved-reviews"
+          id="approvedReviews"
+        ></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         BOOKING
+         ===================================================== -->
+
+    <section class="booking-section" id="booking">
+
+      <div class="container booking-wrap reveal">
+
+        <div class="booking-copy">
+
+          <p class="eyebrow light">
+            <span></span>
+            Let's create something beautiful
+          </p>
+
+          <h2>
+            Have a design in mind?
+            <br>
+            <em>Let's stitch it.</em>
+          </h2>
+
+          <p>
+            Send us your requirement and we'll get back to you
+            for measurements, design details and appointment timing.
+          </p>
+
+        </div>
+
+
+        <form
+          class="booking-form"
+          id="bookingForm"
+        >
+
+          <div class="form-row">
+
+            <label>
+              Name
+              <input
+                required
+                name="name"
+                type="text"
+                placeholder="Your name"
+              >
+            </label>
+
+            <label>
+              Phone
+              <input
+                required
+                name="phone"
+                type="tel"
+                placeholder="Your phone number"
+              >
+            </label>
+
+          </div>
+
+
+          <label>
+
+            Service
+
+            <select name="service">
+
+              <option>Blouse Stitching</option>
+              <option>Embroidery</option>
+              <option>Aari Work</option>
+              <option>Saree Pre-Pleating</option>
+              <option>Tassels & Finishing</option>
+              <option>Custom Tailoring</option>
+
+            </select>
+
+          </label>
+
+
+          <label>
+
+            Tell us what you need
+
+            <textarea
+              name="message"
+              rows="4"
+              placeholder="Occasion, design idea, preferred date..."
+            ></textarea>
+
+          </label>
+
+
+          <button
+            class="btn btn-light"
+            type="submit"
+          >
+            Send Enquiry <span>↗</span>
+          </button>
+
+          <p
+            class="form-note"
+            id="formNote"
+          ></p>
+
+        </form>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONTACT
+         ===================================================== -->
+
+    <section
+      class="contact-section"
+      id="contact"
+    >
+
+      <div class="container contact-grid">
+
+        <div class="contact-copy reveal">
+
+          <p class="eyebrow">
+            <span></span>
+            Contact REKA
+          </p>
+
+          <h2>
+            Ready when <em>you are.</em>
+          </h2>
+
+          <p>
+            Call or message us to discuss your next blouse,
+            embroidery project or tailoring requirement.
+          </p>
+
+
+          <div class="contact-items">
+
+            <a href="tel:+919087770472">
+
+              <span>☎</span>
+
+              <div>
+                <small>Call us</small>
+                <strong>90877 70472</strong>
+              </div>
+
+            </a>
+
+
+            <div>
+
+              <span>⌖</span>
+
+              <div>
+                <small>Studio</small>
+                <strong>Tamil Nadu, India</strong>
+              </div>
+
+            </div>
+
+
+            <div>
+
+              <span>◷</span>
+
+              <div>
+                <small>Appointments</small>
+                <strong>By prior booking</strong>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="contact-card reveal delay-1">
+
+          <div class="contact-card-top">
+
+            <span>REKA</span>
+            <small>EST. WITH LOVE</small>
+
+          </div>
+
+          <div class="needle-line"></div>
+
+          <p>
+            Beautiful tailoring.
+            <br>
+            <strong>Personal service.</strong>
+          </p>
+
+          <a
+            class="btn btn-primary full"
+            href="https://wa.me/919087770472?text=Hello%20REKA%2C%20I%20would%20like%20to%20book%20a%20tailoring%20service."
+          >
+            WhatsApp us <span>↗</span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- WHATSAPP -->
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/919087770472?text=Hello%20REKA%2C%20I%20would%20like%20to%20enquire%20about%20a%20tailoring%20service."
+    aria-label="Chat on WhatsApp"
+  >
+    ✆
+  </a>
+
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+
+  <footer class="footer">
+
+    <div class="container footer-inner">
+
+      <div class="brand footer-brand">
+
+        <div class="brand-mark">
+            <img src="assets/reka-logo.png" alt="REKA Logo">
+        </div>
+
+        <span>
+          <strong>REKA</strong>
+          <small>EMBROIDERY & TAILORING</small>
+        </span>
+
+      </div>
+
+
+      <p>
+        Stitching your style • Embroidering your dreams
+      </p>
+      
+
+
+      <div class="footer-links">
+
+
+    <div class="social-links">
+
+        <a href="https://www.instagram.com/subareka_87?utm_source=qr&stkn=ajZxZmY2Mm5mNHFm"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://www.facebook.com/share/19HysHKorU/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="https://youtube.com/@reka_embroidery_designer?si=U6tfkv-69l4wbGwT"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="YouTube">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        
+        <style>
+.social-links{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-top:14px;
+}
+
+.social-links a{
+  width:42px;
+  height:42px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:50%;
+  color:#fff;
+  text-decoration:none;
+  transition:all .3s ease;
+}
+
+.social-links i{
+  font-size:20px !important;
+  line-height:1;
+}
+
+.social-links a:hover{
+  transform:translateY(-4px) scale(1.08);
+  border-color:#c2185b;
+  background:#c2185b;
+  color:#fff;
+}
+</style>
+    </div>
+
+</div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+      <div class="developer-credit">Developed by Harish K</div>
+      <style>
+        .developer-credit{
+          font-size:12px;
+          color:rgba(255,255,255,.5);
+          text-align:center;
+          margin-bottom:6px;
+        }
+      </style>
+      © <span id="year"></span>
+      REKA Embroidery & Tailoring.
+      Crafted with care.
+
+    </div>
+
+  </footer>
+
+
+  <!-- EXISTING JAVASCRIPT -->
+  <script src="assets/js/script.js"></script>
+
+
+  <script>
+
+    function openReviewForm() {
+
+      const f = document.getElementById('reviewForm');
+
+      if (!f) return;
+
+      f.hidden = false;
+
+      f.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+      });
+
+    }
+
+
+    function closeReviewForm() {
+
+      const f = document.getElementById('reviewForm');
+
+      if (f) {
+        f.hidden = true;
+      }
+
+    }
+
+
+    document
+      .getElementById('customerReviewForm')
+      ?.addEventListener('submit', async function(e) {
+
+        e.preventDefault();
+
+        const msg =
+          document.getElementById('reviewFormMessage');
+
+        const data =
+          Object.fromEntries(
+            new FormData(this).entries()
+          );
+
+        msg.textContent =
+          'Submitting your review…';
+
+        msg.className =
+          'review-form-message';
+
+
+        try {
+
+          const r = await fetch(
+            '/api/reviews',
+            {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(data)
+            }
+          );
+
+
+          const result = await r.json();
+
+
+          if (!r.ok) {
+
+            throw new Error(
+              result.message ||
+              'Unable to submit review.'
+            );
+
+          }
+
+
+          msg.textContent =
+            'Thank you! Your review has been submitted and is waiting for approval.';
+
+          msg.className =
+            'review-form-message success';
+
+          this.reset();
+
+
+        } catch (err) {
+
+          msg.textContent =
+            err.message +
+            ' Make sure the Flask backend is running.';
+
+          msg.className =
+            'review-form-message error';
+
+        }
+
+      });
+
+
+    async function loadApprovedReviews() {
+
+      const box =
+        document.getElementById('approvedReviews');
+
+      const empty =
+        document.getElementById('reviewEmpty');
+
+
+      if (!box) return;
+
+
+      try {
+
+        const r = await fetch(
+          '/api/reviews',
+          {
+            cache: 'no-store'
+          }
+        );
+
+
+        if (!r.ok) {
+
+          throw new Error(
+            'Unable to load reviews'
+          );
+
+        }
+
+
+        const reviews =
+          await r.json();
+
+
+        if (!reviews.length) {
+
+          box.innerHTML = '';
+
+          if (empty) {
+            empty.hidden = false;
+          }
+
+          return;
+
+        }
+
+
+        if (empty) {
+          empty.hidden = true;
+        }
+
+
+        box.innerHTML =
+          reviews.map(x => {
+
+            const name =
+              String(
+                x.name || 'Customer'
+              );
+
+
+            const initials =
+              name
+                .trim()
+                .split(/\s+/)
+                .slice(0, 2)
+                .map(v => v[0])
+                .join('')
+                .toUpperCase();
+
+
+            const rating =
+              Math.min(
+                5,
+                Math.max(
+                  1,
+                  Number(x.rating) || 5
+                )
+              );
+
+
+            return `
+              <article class="customer-review-card reveal visible">
+
+                <div class="review-top">
+
+                  <div class="customer-avatar">
+                    ${escapeHtml(initials)}
+                  </div>
+
+                  <div>
+                    <h3>
+                      ${escapeHtml(name)}
+                    </h3>
+
+                    <span>
+                      ${escapeHtml(
+                        x.service ||
+                        'Tailoring Service'
+                      )}
+                    </span>
+                  </div>
+
+                  <div class="verified">
+                    ✓ Approved
+                  </div>
+
+                </div>
+
+
+                <div class="review-stars">
+                  ${'★'.repeat(rating)}
+                  ${'☆'.repeat(5 - rating)}
+                </div>
+
+
+                <p class="customer-review">
+                  “${escapeHtml(x.review)}”
+                </p>
+
+
+                <div class="review-date">
+                  ${escapeHtml(
+                    x.date || 'Recently'
+                  )}
+                </div>
+
+              </article>
+            `;
+
+          }).join('');
+
+
+      } catch (e) {
+
+        box.innerHTML =
+          '<div class="review-load-error">Reviews are temporarily unavailable. Please try again shortly.</div>';
+
+      }
+
+    }
+
+
+    function escapeHtml(v) {
+
+      return String(v ?? '').replace(
+        /[&<>"']/g,
+        c => ({
+          '&': '&amp;',
+          '<': '&lt;',
+          '>': '&gt;',
+          '"': '&quot;',
+          "'": '&#39;'
+        }[c])
+      );
+
+    }
+
+
+    loadApprovedReviews();
+
+  </script>
+
+</body>
+</html>
